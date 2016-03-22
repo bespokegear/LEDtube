@@ -108,12 +108,12 @@ void loop()
   if(analogRead(piezo1)>=piezoThreshold)
   {
     piezoUpdated = piezoUpdated+1;
-    Serial.println("Piezo 0");
+    //Serial.println("Piezo 0");
   }
   if(analogRead(piezo2)>=piezoThreshold)
   {
     piezoUpdated = piezoUpdated+2;
-    Serial.println("Piezo 1");
+    //Serial.println("Piezo 1");
   } 
   if(analogRead(piezo3)>=piezoThreshold)
   {

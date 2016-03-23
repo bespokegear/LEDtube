@@ -1,0 +1,1586 @@
+EESchema Schematic File Version 2
+LIBS:LED_Sound_Tubes_Slave-rescue
+LIBS:power
+LIBS:device
+LIBS:conn
+LIBS:matts_components
+LIBS:arduino
+LIBS:w_connectors
+LIBS:40xx
+LIBS:LED_Sound_Tubes_Slave-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND-RESCUE-LED_Sound_Tubes_Slave #PWR015
+U 1 1 56F2D6F1
+P 3000 2250
+F 0 "#PWR015" H 3000 2250 30  0001 C CNN
+F 1 "GND" H 3000 2180 30  0001 C CNN
+F 2 "" H 3000 2250 60  0000 C CNN
+F 3 "" H 3000 2250 60  0000 C CNN
+	1    3000 2250
+	1    0    0    -1  
+$EndComp
+Text GLabel 10500 1000 2    60   Output ~ 0
+PIEZO1
+Text GLabel 10500 1150 2    60   Output ~ 0
+PIEZO2
+Text GLabel 10500 1300 2    60   Output ~ 0
+PIEZO3
+Text GLabel 10500 1450 2    60   Output ~ 0
+PIEZO4
+Text GLabel 10500 1600 2    60   Output ~ 0
+PIEZO5
+Text GLabel 10500 1750 2    60   Output ~ 0
+PIEZO6
+Text GLabel 2050 1350 0    60   Input ~ 0
+LED_D1
+Text GLabel 2050 2450 0    60   Input ~ 0
+LED_D2
+$Comp
+L CONN_02X03 P6
+U 1 1 56F2D6FF
+P 3700 1300
+F 0 "P6" H 3700 1500 50  0000 C CNN
+F 1 "LED_STR_1" H 3700 1100 50  0000 C CNN
+F 2 "REInnovationFootprint:IDC_Header_6W_2.54" H 3700 100 60  0001 C CNN
+F 3 "" H 3700 100 60  0000 C CNN
+	1    3700 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 P7
+U 1 1 56F2D706
+P 3700 2400
+F 0 "P7" H 3700 2600 50  0000 C CNN
+F 1 "LED_STR_2" H 3700 2200 50  0000 C CNN
+F 2 "REInnovationFootprint:IDC_Header_6W_2.54" H 3700 1200 60  0001 C CNN
+F 3 "" H 3700 1200 60  0000 C CNN
+	1    3700 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2250 3000 2150
+Wire Wire Line
+	3000 2150 3300 2150
+Wire Wire Line
+	3300 2150 3300 2300
+Wire Wire Line
+	3300 2300 3450 2300
+Wire Wire Line
+	3450 2400 3300 2400
+Wire Wire Line
+	3300 2400 3300 2500
+Wire Wire Line
+	3300 2500 3450 2500
+Wire Wire Line
+	2950 2450 3300 2450
+Connection ~ 3300 2450
+Wire Wire Line
+	3950 2300 4000 2300
+Wire Wire Line
+	4000 2300 4000 2250
+Wire Wire Line
+	4000 2250 4250 2250
+Wire Wire Line
+	3950 2400 4250 2400
+Wire Wire Line
+	3950 2500 4000 2500
+Wire Wire Line
+	4000 2500 4000 2550
+Wire Wire Line
+	4000 2550 4250 2550
+$Comp
+L GND-RESCUE-LED_Sound_Tubes_Slave #PWR016
+U 1 1 56F2D71D
+P 3100 1050
+F 0 "#PWR016" H 3100 1050 30  0001 C CNN
+F 1 "GND" H 3100 980 30  0001 C CNN
+F 2 "" H 3100 1050 60  0000 C CNN
+F 3 "" H 3100 1050 60  0000 C CNN
+	1    3100 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 950  3100 950 
+Wire Wire Line
+	3100 950  3100 1050
+Wire Wire Line
+	3450 1200 3300 1200
+Wire Wire Line
+	3300 1200 3300 950 
+Wire Wire Line
+	3950 1300 4250 1300
+Wire Wire Line
+	3950 1200 4000 1200
+Wire Wire Line
+	4000 1200 4000 1150
+Wire Wire Line
+	4000 1150 4250 1150
+Wire Wire Line
+	3950 1400 4000 1400
+Wire Wire Line
+	4000 1400 4000 1450
+Wire Wire Line
+	4000 1450 4250 1450
+Wire Wire Line
+	3450 1400 3350 1400
+Wire Wire Line
+	3350 1400 3350 1300
+Wire Wire Line
+	3350 1300 3450 1300
+Wire Wire Line
+	3000 1350 3350 1350
+Connection ~ 3350 1350
+Text Notes 3500 2100 0    60   ~ 0
+POWER - STRING 2
+Text Notes 3450 950  0    60   ~ 0
+POWER - STRING 1
+$Comp
+L GND-RESCUE-LED_Sound_Tubes_Slave #PWR017
+U 1 1 56F2D735
+P 3000 3650
+F 0 "#PWR017" H 3000 3650 30  0001 C CNN
+F 1 "GND" H 3000 3580 30  0001 C CNN
+F 2 "" H 3000 3650 60  0000 C CNN
+F 3 "" H 3000 3650 60  0000 C CNN
+	1    3000 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 10450 3750 2    60   Output ~ 0
+PIEZO7
+Text GLabel 10450 3900 2    60   Output ~ 0
+PIEZO8
+Text GLabel 10450 4050 2    60   Output ~ 0
+PIEZO9
+Text GLabel 2050 3850 0    60   Input ~ 0
+LED_D3
+$Comp
+L CONN_02X03 P9
+U 1 1 56F2D73F
+P 3700 3800
+F 0 "P9" H 3700 4000 50  0000 C CNN
+F 1 "LED_STR_3" H 3700 3600 50  0000 C CNN
+F 2 "REInnovationFootprint:IDC_Header_6W_2.54" H 3700 2600 60  0001 C CNN
+F 3 "" H 3700 2600 60  0000 C CNN
+	1    3700 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3650 3000 3550
+Wire Wire Line
+	3000 3550 3300 3550
+Wire Wire Line
+	3300 3550 3300 3700
+Wire Wire Line
+	3300 3700 3450 3700
+Wire Wire Line
+	3450 3800 3300 3800
+Wire Wire Line
+	3300 3800 3300 3900
+Wire Wire Line
+	3300 3900 3450 3900
+Wire Wire Line
+	3000 3850 3300 3850
+Connection ~ 3300 3850
+Wire Wire Line
+	3950 3700 4000 3700
+Wire Wire Line
+	4000 3700 4000 3650
+Wire Wire Line
+	4000 3650 4250 3650
+Wire Wire Line
+	3950 3800 4250 3800
+Wire Wire Line
+	3950 3900 4000 3900
+Wire Wire Line
+	4000 3900 4000 3950
+Wire Wire Line
+	4000 3950 4250 3950
+Text Notes 3550 3500 0    60   ~ 0
+POWER - STRING 3
+$Comp
+L GND-RESCUE-LED_Sound_Tubes_Slave #PWR018
+U 1 1 56F2D757
+P 3000 4950
+F 0 "#PWR018" H 3000 4950 30  0001 C CNN
+F 1 "GND" H 3000 4880 30  0001 C CNN
+F 2 "" H 3000 4950 60  0000 C CNN
+F 3 "" H 3000 4950 60  0000 C CNN
+	1    3000 4950
+	1    0    0    -1  
+$EndComp
+Text GLabel 10450 4200 2    60   Output ~ 0
+PIEZO10
+Text GLabel 10450 4350 2    60   Output ~ 0
+PIEZO11
+Text GLabel 10450 4500 2    60   Output ~ 0
+PIEZO12
+Text GLabel 2050 5150 0    60   Input ~ 0
+LED_D4
+$Comp
+L CONN_02X03 P10
+U 1 1 56F2D761
+P 3700 5100
+F 0 "P10" H 3700 5300 50  0000 C CNN
+F 1 "LED_STR_4" H 3700 4900 50  0000 C CNN
+F 2 "REInnovationFootprint:IDC_Header_6W_2.54" H 3700 3900 60  0001 C CNN
+F 3 "" H 3700 3900 60  0000 C CNN
+	1    3700 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 4950 3000 4850
+Wire Wire Line
+	3000 4850 3300 4850
+Wire Wire Line
+	3300 4850 3300 5000
+Wire Wire Line
+	3300 5000 3450 5000
+Wire Wire Line
+	3450 5100 3300 5100
+Wire Wire Line
+	3300 5100 3300 5200
+Wire Wire Line
+	3300 5200 3450 5200
+Wire Wire Line
+	3000 5150 3300 5150
+Connection ~ 3300 5150
+Wire Wire Line
+	3950 5000 4000 5000
+Wire Wire Line
+	4000 5000 4000 4950
+Wire Wire Line
+	4000 4950 4200 4950
+Wire Wire Line
+	3950 5100 4200 5100
+Wire Wire Line
+	3950 5200 4000 5200
+Wire Wire Line
+	4000 5200 4000 5250
+Wire Wire Line
+	4000 5250 4200 5250
+Text Notes 3450 4800 0    60   ~ 0
+POWER - STRING 4
+$Comp
+L GND-RESCUE-LED_Sound_Tubes_Slave #PWR019
+U 1 1 56F2D779
+P 3150 6400
+F 0 "#PWR019" H 3150 6400 30  0001 C CNN
+F 1 "GND" H 3150 6330 30  0001 C CNN
+F 2 "" H 3150 6400 60  0000 C CNN
+F 3 "" H 3150 6400 60  0000 C CNN
+	1    3150 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 6950 5800 2    60   Output ~ 0
+PIEZO13
+Text GLabel 2200 6600 0    60   Input ~ 0
+LED_D5
+$Comp
+L CONN_02X03 P11
+U 1 1 56F2D781
+P 3850 6550
+F 0 "P11" H 3850 6750 50  0000 C CNN
+F 1 "LED_STR_5" H 3850 6350 50  0000 C CNN
+F 2 "REInnovationFootprint:IDC_Header_6W_2.54" H 3850 5350 60  0001 C CNN
+F 3 "" H 3850 5350 60  0000 C CNN
+	1    3850 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6400 3150 6300
+Wire Wire Line
+	3150 6300 3450 6300
+Wire Wire Line
+	3450 6300 3450 6450
+Wire Wire Line
+	3450 6450 3600 6450
+Wire Wire Line
+	3600 6550 3450 6550
+Wire Wire Line
+	3450 6550 3450 6650
+Wire Wire Line
+	3450 6650 3600 6650
+Wire Wire Line
+	3150 6600 3450 6600
+Connection ~ 3450 6600
+Wire Wire Line
+	4100 6450 4150 6450
+Wire Wire Line
+	4150 6450 4150 6400
+Wire Wire Line
+	4150 6400 4400 6400
+Text Notes 3600 6250 0    60   ~ 0
+POWER - STRING 5
+NoConn ~ 4100 6550
+NoConn ~ 4100 6650
+$Comp
+L 4050D IC?
+U 1 1 56F2D797
+P 2600 1350
+AR Path="/56F2D797" Ref="IC?"  Part="1" 
+AR Path="/56F2CD93/56F2D797" Ref="IC1"  Part="1" 
+F 0 "IC1" H 2700 1475 50  0000 L BNN
+F 1 "4050D" H 2700 1150 50  0000 L BNN
+F 2 "REInnovationFootprint:DIP-16__NARROW" H 2600 1500 50  0001 C CNN
+F 3 "" H 2600 1350 60  0000 C CNN
+	1    2600 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4050D IC?
+U 2 1 56F2D7A6
+P 2550 2450
+AR Path="/56F2D7A6" Ref="IC?"  Part="2" 
+AR Path="/56F2CD93/56F2D7A6" Ref="IC1"  Part="2" 
+F 0 "IC1" H 2650 2575 50  0000 L BNN
+F 1 "4050D" H 2650 2250 50  0000 L BNN
+F 2 "REInnovationFootprint:DIP-16__NARROW" H 2550 2600 50  0001 C CNN
+F 3 "" H 2550 2450 60  0000 C CNN
+F 4 "Value" H 2550 2450 60  0001 C CNN "Description"
+F 5 "Value" H 2550 2450 60  0001 C CNN "Notes"
+F 6 "Value" H 2550 2450 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 2550 2450 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 2550 2450 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 2550 2450 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 2550 2450 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 2550 2450 60  0001 C CNN "Supplier 2 Part No"
+	2    2550 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4050D IC?
+U 3 1 56F2D7B5
+P 2600 3850
+AR Path="/56F2D7B5" Ref="IC?"  Part="3" 
+AR Path="/56F2CD93/56F2D7B5" Ref="IC1"  Part="3" 
+F 0 "IC1" H 2700 3975 50  0000 L BNN
+F 1 "4050D" H 2700 3650 50  0000 L BNN
+F 2 "REInnovationFootprint:DIP-16__NARROW" H 2600 4000 50  0001 C CNN
+F 3 "" H 2600 3850 60  0000 C CNN
+F 4 "Value" H 2600 3850 60  0001 C CNN "Description"
+F 5 "Value" H 2600 3850 60  0001 C CNN "Notes"
+F 6 "Value" H 2600 3850 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 2600 3850 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 2600 3850 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 2600 3850 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 2600 3850 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 2600 3850 60  0001 C CNN "Supplier 2 Part No"
+	3    2600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4050D IC?
+U 4 1 56F2D7C4
+P 2600 5150
+AR Path="/56F2D7C4" Ref="IC?"  Part="4" 
+AR Path="/56F2CD93/56F2D7C4" Ref="IC1"  Part="4" 
+F 0 "IC1" H 2700 5275 50  0000 L BNN
+F 1 "4050D" H 2700 4950 50  0000 L BNN
+F 2 "REInnovationFootprint:DIP-16__NARROW" H 2600 5300 50  0001 C CNN
+F 3 "" H 2600 5150 60  0000 C CNN
+F 4 "Value" H 2600 5150 60  0001 C CNN "Description"
+F 5 "Value" H 2600 5150 60  0001 C CNN "Notes"
+F 6 "Value" H 2600 5150 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 2600 5150 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 2600 5150 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 2600 5150 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 2600 5150 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 2600 5150 60  0001 C CNN "Supplier 2 Part No"
+	4    2600 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4050D IC?
+U 5 1 56F2D7D3
+P 2750 6600
+AR Path="/56F2D7D3" Ref="IC?"  Part="5" 
+AR Path="/56F2CD93/56F2D7D3" Ref="IC1"  Part="5" 
+F 0 "IC1" H 2850 6725 50  0000 L BNN
+F 1 "4050D" H 2850 6400 50  0000 L BNN
+F 2 "REInnovationFootprint:DIP-16__NARROW" H 2750 6750 50  0001 C CNN
+F 3 "" H 2750 6600 60  0000 C CNN
+F 4 "Value" H 2750 6600 60  0001 C CNN "Description"
+F 5 "Value" H 2750 6600 60  0001 C CNN "Notes"
+F 6 "Value" H 2750 6600 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 2750 6600 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 2750 6600 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 2750 6600 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 2750 6600 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 2750 6600 60  0001 C CNN "Supplier 2 Part No"
+	5    2750 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 6600 2200 6600
+Wire Wire Line
+	2200 5150 2050 5150
+Wire Wire Line
+	2200 3850 2050 3850
+Wire Wire Line
+	2050 2450 2150 2450
+Wire Wire Line
+	2200 1350 2050 1350
+$Comp
+L 4050D IC?
+U 7 1 56F2DC17
+P 1250 3250
+AR Path="/56F2DC17" Ref="IC?"  Part="7" 
+AR Path="/56F2CD93/56F2DC17" Ref="IC1"  Part="7" 
+F 0 "IC1" H 1250 3500 50  0000 L BNN
+F 1 "4050D" H 1350 3050 50  0000 L BNN
+F 2 "REInnovationFootprint:DIP-16__NARROW" H 1250 3400 50  0001 C CNN
+F 3 "" H 1250 3250 60  0000 C CNN
+	7    1250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-LED_Sound_Tubes_Slave #PWR020
+U 1 1 56F2DC1E
+P 1250 3650
+F 0 "#PWR020" H 1250 3650 30  0001 C CNN
+F 1 "GND-RESCUE-LED_Sound_Tubes_Slave" H 1250 3580 30  0001 C CNN
+F 2 "" H 1250 3650 60  0000 C CNN
+F 3 "" H 1250 3650 60  0000 C CNN
+	1    1250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR021
+U 1 1 56F2DC24
+P 1150 2850
+F 0 "#PWR021" H 1150 2700 50  0001 C CNN
+F 1 "+5V" H 1150 2990 50  0000 C CNN
+F 2 "" H 1150 2850 50  0000 C CNN
+F 3 "" H 1150 2850 50  0000 C CNN
+	1    1150 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2950 1150 2850
+Wire Wire Line
+	1250 3550 1250 3650
+$Comp
+L D_Schottky D13
+U 1 1 56F2E08E
+P 9650 2850
+F 0 "D13" H 9650 2950 50  0000 C CNN
+F 1 "5V1 Diode" H 9350 2800 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Diode_3" H 9650 2850 50  0001 C CNN
+F 3 "" H 9650 2850 50  0000 C CNN
+	1    9650 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D15
+U 1 1 56F2E095
+P 9950 2850
+F 0 "D15" H 9950 2950 50  0000 C CNN
+F 1 "5V1 Diode" H 9650 2800 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Diode_3" H 9950 2850 50  0001 C CNN
+F 3 "" H 9950 2850 50  0000 C CNN
+	1    9950 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D17
+U 1 1 56F2E09C
+P 10250 2850
+F 0 "D17" H 10250 2950 50  0000 C CNN
+F 1 "5V1 Diode" H 9950 2800 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Diode_3" H 10250 2850 50  0001 C CNN
+F 3 "" H 10250 2850 50  0000 C CNN
+	1    10250 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D11
+U 1 1 56F2E0A3
+P 9350 2850
+F 0 "D11" H 9350 2950 50  0000 C CNN
+F 1 "5V1 Diode" H 9050 2800 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Diode_3" H 9350 2850 50  0001 C CNN
+F 3 "" H 9350 2850 50  0000 C CNN
+	1    9350 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D6
+U 1 1 56F2E0AA
+P 9050 2850
+F 0 "D6" H 9050 2950 50  0000 C CNN
+F 1 "5V1 Diode" H 8750 2800 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Diode_3" H 9050 2850 50  0001 C CNN
+F 3 "" H 9050 2850 50  0000 C CNN
+	1    9050 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D4
+U 1 1 56F2E0B1
+P 8750 2850
+F 0 "D4" H 8750 2950 50  0000 C CNN
+F 1 "5V1 Diode" H 8450 2800 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Diode_3" H 8750 2850 50  0001 C CNN
+F 3 "" H 8750 2850 50  0000 C CNN
+	1    8750 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-LED_Sound_Tubes_Slave #PWR022
+U 1 1 56F2E0B8
+P 9450 3350
+F 0 "#PWR022" H 9450 3350 30  0001 C CNN
+F 1 "GND" H 9450 3280 30  0001 C CNN
+F 2 "" H 9450 3350 60  0000 C CNN
+F 3 "" H 9450 3350 60  0000 C CNN
+	1    9450 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3000 8750 3150
+Wire Wire Line
+	8600 3150 10250 3150
+Wire Wire Line
+	10250 3150 10250 3000
+Wire Wire Line
+	9450 3150 9450 3350
+Connection ~ 9450 3150
+Wire Wire Line
+	9050 3000 9050 3150
+Connection ~ 9050 3150
+Wire Wire Line
+	9350 3000 9350 3150
+Connection ~ 9350 3150
+Wire Wire Line
+	9650 3000 9650 3150
+Connection ~ 9650 3150
+Wire Wire Line
+	9950 3000 9950 3150
+Connection ~ 9950 3150
+Wire Wire Line
+	8750 1750 8750 2700
+Wire Wire Line
+	9050 1600 9050 2700
+Wire Wire Line
+	9350 1450 9350 2700
+Wire Wire Line
+	9650 1300 9650 2700
+Wire Wire Line
+	9950 1150 9950 2700
+Wire Wire Line
+	10250 1000 10250 2700
+$Comp
+L R R19
+U 1 1 56F2E0D1
+P 8600 2300
+F 0 "R19" V 8680 2300 50  0000 C CNN
+F 1 "1M" V 8600 2300 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 8600 2300 60  0001 C CNN
+F 3 "" H 8600 2300 60  0000 C CNN
+	1    8600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R21
+U 1 1 56F2E0D8
+P 8900 2300
+F 0 "R21" V 8980 2300 50  0000 C CNN
+F 1 "1M" V 8900 2300 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 8900 2300 60  0001 C CNN
+F 3 "" H 8900 2300 60  0000 C CNN
+	1    8900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R23
+U 1 1 56F2E0DF
+P 9200 2300
+F 0 "R23" V 9280 2300 50  0000 C CNN
+F 1 "1M" V 9200 2300 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 9200 2300 60  0001 C CNN
+F 3 "" H 9200 2300 60  0000 C CNN
+	1    9200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R25
+U 1 1 56F2E0E6
+P 9500 2300
+F 0 "R25" V 9580 2300 50  0000 C CNN
+F 1 "1M" V 9500 2300 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 9500 2300 60  0001 C CNN
+F 3 "" H 9500 2300 60  0000 C CNN
+	1    9500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R27
+U 1 1 56F2E0ED
+P 9800 2300
+F 0 "R27" V 9880 2300 50  0000 C CNN
+F 1 "1M" V 9800 2300 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 9800 2300 60  0001 C CNN
+F 3 "" H 9800 2300 60  0000 C CNN
+	1    9800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R29
+U 1 1 56F2E0F4
+P 10100 2300
+F 0 "R29" V 10180 2300 50  0000 C CNN
+F 1 "1M" V 10100 2300 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 10100 2300 60  0001 C CNN
+F 3 "" H 10100 2300 60  0000 C CNN
+	1    10100 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2050 8600 1950
+Wire Wire Line
+	8600 1950 8750 1950
+Connection ~ 8750 1950
+Wire Wire Line
+	8900 2050 8900 1950
+Wire Wire Line
+	8900 1950 9050 1950
+Connection ~ 9050 1950
+Wire Wire Line
+	9200 2050 9200 1950
+Wire Wire Line
+	9200 1950 9350 1950
+Connection ~ 9350 1950
+Wire Wire Line
+	9500 2050 9500 1950
+Wire Wire Line
+	9500 1950 9650 1950
+Connection ~ 9650 1950
+Wire Wire Line
+	9800 2050 9800 1950
+Wire Wire Line
+	9800 1950 9950 1950
+Connection ~ 9950 1950
+Wire Wire Line
+	10100 2050 10100 1950
+Wire Wire Line
+	10100 1950 10250 1950
+Connection ~ 10250 1950
+Wire Wire Line
+	10100 2550 10100 3150
+Connection ~ 10100 3150
+Wire Wire Line
+	9800 2550 9800 3150
+Connection ~ 9800 3150
+Wire Wire Line
+	9500 2550 9500 3150
+Connection ~ 9500 3150
+Wire Wire Line
+	9200 2550 9200 3150
+Connection ~ 9200 3150
+Wire Wire Line
+	8900 2550 8900 3150
+Connection ~ 8900 3150
+Wire Wire Line
+	8600 2550 8600 3150
+Connection ~ 8750 3150
+$Comp
+L D_Schottky D12
+U 1 1 56F2FA71
+P 9600 5600
+F 0 "D12" H 9600 5700 50  0000 C CNN
+F 1 "5V1 Diode" H 9300 5550 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Diode_3" H 9600 5600 50  0001 C CNN
+F 3 "" H 9600 5600 50  0000 C CNN
+	1    9600 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D14
+U 1 1 56F2FA78
+P 9900 5600
+F 0 "D14" H 9900 5700 50  0000 C CNN
+F 1 "5V1 Diode" H 9600 5550 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Diode_3" H 9900 5600 50  0001 C CNN
+F 3 "" H 9900 5600 50  0000 C CNN
+	1    9900 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D16
+U 1 1 56F2FA7F
+P 10200 5600
+F 0 "D16" H 10200 5700 50  0000 C CNN
+F 1 "5V1 Diode" H 9900 5550 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Diode_3" H 10200 5600 50  0001 C CNN
+F 3 "" H 10200 5600 50  0000 C CNN
+	1    10200 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D7
+U 1 1 56F2FA86
+P 9300 5600
+F 0 "D7" H 9300 5700 50  0000 C CNN
+F 1 "5V1 Diode" H 9000 5550 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Diode_3" H 9300 5600 50  0001 C CNN
+F 3 "" H 9300 5600 50  0000 C CNN
+	1    9300 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D5
+U 1 1 56F2FA8D
+P 9000 5600
+F 0 "D5" H 9000 5700 50  0000 C CNN
+F 1 "5V1 Diode" H 8700 5550 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Diode_3" H 9000 5600 50  0001 C CNN
+F 3 "" H 9000 5600 50  0000 C CNN
+	1    9000 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L D_Schottky D3
+U 1 1 56F2FA94
+P 8700 5600
+F 0 "D3" H 8700 5700 50  0000 C CNN
+F 1 "5V1 Diode" H 8400 5550 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Diode_3" H 8700 5600 50  0001 C CNN
+F 3 "" H 8700 5600 50  0000 C CNN
+	1    8700 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L GND-RESCUE-LED_Sound_Tubes_Slave #PWR023
+U 1 1 56F2FA9B
+P 9400 6100
+F 0 "#PWR023" H 9400 6100 30  0001 C CNN
+F 1 "GND" H 9400 6030 30  0001 C CNN
+F 2 "" H 9400 6100 60  0000 C CNN
+F 3 "" H 9400 6100 60  0000 C CNN
+	1    9400 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 5750 8700 5900
+Wire Wire Line
+	8550 5900 10200 5900
+Wire Wire Line
+	10200 5900 10200 5750
+Wire Wire Line
+	9400 5900 9400 6100
+Connection ~ 9400 5900
+Wire Wire Line
+	9000 5750 9000 5900
+Connection ~ 9000 5900
+Wire Wire Line
+	9300 5750 9300 5900
+Connection ~ 9300 5900
+Wire Wire Line
+	9600 5750 9600 5900
+Connection ~ 9600 5900
+Wire Wire Line
+	9900 5750 9900 5900
+Connection ~ 9900 5900
+Wire Wire Line
+	8700 4500 8700 5450
+Wire Wire Line
+	9000 4350 9000 5450
+Wire Wire Line
+	9300 4200 9300 5450
+Wire Wire Line
+	9600 4050 9600 5450
+Wire Wire Line
+	9900 3900 9900 5450
+Wire Wire Line
+	10200 3750 10200 5450
+$Comp
+L R R18
+U 1 1 56F2FAB4
+P 8550 5050
+F 0 "R18" V 8630 5050 50  0000 C CNN
+F 1 "1M" V 8550 5050 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 8550 5050 60  0001 C CNN
+F 3 "" H 8550 5050 60  0000 C CNN
+	1    8550 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R20
+U 1 1 56F2FABB
+P 8850 5050
+F 0 "R20" V 8930 5050 50  0000 C CNN
+F 1 "1M" V 8850 5050 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 8850 5050 60  0001 C CNN
+F 3 "" H 8850 5050 60  0000 C CNN
+	1    8850 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R22
+U 1 1 56F2FAC2
+P 9150 5050
+F 0 "R22" V 9230 5050 50  0000 C CNN
+F 1 "1M" V 9150 5050 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 9150 5050 60  0001 C CNN
+F 3 "" H 9150 5050 60  0000 C CNN
+	1    9150 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R24
+U 1 1 56F2FAC9
+P 9450 5050
+F 0 "R24" V 9530 5050 50  0000 C CNN
+F 1 "1M" V 9450 5050 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 9450 5050 60  0001 C CNN
+F 3 "" H 9450 5050 60  0000 C CNN
+	1    9450 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R26
+U 1 1 56F2FAD0
+P 9750 5050
+F 0 "R26" V 9830 5050 50  0000 C CNN
+F 1 "1M" V 9750 5050 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 9750 5050 60  0001 C CNN
+F 3 "" H 9750 5050 60  0000 C CNN
+	1    9750 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R28
+U 1 1 56F2FAD7
+P 10050 5050
+F 0 "R28" V 10130 5050 50  0000 C CNN
+F 1 "1M" V 10050 5050 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 10050 5050 60  0001 C CNN
+F 3 "" H 10050 5050 60  0000 C CNN
+	1    10050 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4800 8550 4700
+Wire Wire Line
+	8550 4700 8700 4700
+Connection ~ 8700 4700
+Wire Wire Line
+	8850 4800 8850 4700
+Wire Wire Line
+	8850 4700 9000 4700
+Connection ~ 9000 4700
+Wire Wire Line
+	9150 4800 9150 4700
+Wire Wire Line
+	9150 4700 9300 4700
+Connection ~ 9300 4700
+Wire Wire Line
+	9450 4800 9450 4700
+Wire Wire Line
+	9450 4700 9600 4700
+Connection ~ 9600 4700
+Wire Wire Line
+	9750 4800 9750 4700
+Wire Wire Line
+	9750 4700 9900 4700
+Connection ~ 9900 4700
+Wire Wire Line
+	10050 4800 10050 4700
+Wire Wire Line
+	10050 4700 10200 4700
+Connection ~ 10200 4700
+Wire Wire Line
+	10050 5300 10050 5900
+Connection ~ 10050 5900
+Wire Wire Line
+	9750 5300 9750 5900
+Connection ~ 9750 5900
+Wire Wire Line
+	9450 5300 9450 5900
+Connection ~ 9450 5900
+Wire Wire Line
+	9150 5300 9150 5900
+Connection ~ 9150 5900
+Wire Wire Line
+	8850 5300 8850 5900
+Connection ~ 8850 5900
+Wire Wire Line
+	8550 5300 8550 5900
+Connection ~ 8700 5900
+$Comp
+L D_Schottky D1
+U 1 1 56F31673
+P 6650 6750
+F 0 "D1" H 6650 6850 50  0000 C CNN
+F 1 "5V1 Diode" H 6350 6700 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Diode_3" H 6650 6750 50  0001 C CNN
+F 3 "" H 6650 6750 50  0000 C CNN
+	1    6650 6750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 7050 6650 6900
+$Comp
+L R R17
+U 1 1 56F3167B
+P 6500 6200
+F 0 "R17" V 6580 6200 50  0000 C CNN
+F 1 "1M" V 6500 6200 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 6500 6200 60  0001 C CNN
+F 3 "" H 6500 6200 60  0000 C CNN
+	1    6500 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 6450 6500 7050
+$Comp
+L GND-RESCUE-LED_Sound_Tubes_Slave #PWR024
+U 1 1 56F31683
+P 6550 7200
+F 0 "#PWR024" H 6550 7200 30  0001 C CNN
+F 1 "GND-RESCUE-LED_Sound_Tubes_Slave" H 6550 7130 30  0001 C CNN
+F 2 "" H 6550 7200 60  0000 C CNN
+F 3 "" H 6550 7200 60  0000 C CNN
+	1    6550 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 7050 6650 7050
+Wire Wire Line
+	6550 7050 6550 7200
+Connection ~ 6550 7050
+$Comp
+L C C6
+U 1 1 56F31D81
+P 5050 6700
+F 0 "C6" H 5100 6800 50  0000 L CNN
+F 1 "100n" H 5100 6600 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 5050 6700 60  0001 C CNN
+F 3 "" H 5050 6700 60  0000 C CNN
+F 4 "Value" H 5050 6700 60  0001 C CNN "Description"
+F 5 "Value" H 5050 6700 60  0001 C CNN "Notes"
+F 6 "Value" H 5050 6700 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 5050 6700 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 5050 6700 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 5050 6700 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 5050 6700 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 5050 6700 60  0001 C CNN "Supplier 2 Part No"
+	1    5050 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 56F31DEC
+P 4650 6400
+F 0 "R16" V 4730 6400 50  0000 C CNN
+F 1 "1k" V 4650 6400 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 4650 6400 60  0001 C CNN
+F 3 "" H 4650 6400 60  0000 C CNN
+	1    4650 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 6900 5050 7050
+Connection ~ 6500 7050
+Wire Wire Line
+	4900 6400 6200 6400
+Wire Wire Line
+	6200 6400 6200 5800
+Wire Wire Line
+	6200 5800 6950 5800
+Wire Wire Line
+	6500 5950 6500 5800
+Connection ~ 6500 5800
+Wire Wire Line
+	6650 6600 6650 5800
+Connection ~ 6650 5800
+Wire Wire Line
+	5050 6500 5050 6400
+Connection ~ 5050 6400
+$Comp
+L R R1
+U 1 1 56F32E24
+P 4450 4950
+F 0 "R1" V 4530 4950 50  0000 C CNN
+F 1 "1k" V 4450 4950 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 4450 4950 60  0001 C CNN
+F 3 "" H 4450 4950 60  0000 C CNN
+	1    4450 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 56F32ECE
+P 4850 5500
+F 0 "C1" H 4900 5600 50  0000 L CNN
+F 1 "100n" H 4900 5400 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 4850 5500 60  0001 C CNN
+F 3 "" H 4850 5500 60  0000 C CNN
+F 4 "Value" H 4850 5500 60  0001 C CNN "Description"
+F 5 "Value" H 4850 5500 60  0001 C CNN "Notes"
+F 6 "Value" H 4850 5500 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 4850 5500 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 4850 5500 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 4850 5500 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 4850 5500 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 4850 5500 60  0001 C CNN "Supplier 2 Part No"
+	1    4850 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 56F33198
+P 4450 5100
+F 0 "R2" V 4530 5100 50  0000 C CNN
+F 1 "1k" V 4450 5100 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 4450 5100 60  0001 C CNN
+F 3 "" H 4450 5100 60  0000 C CNN
+	1    4450 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 56F332BC
+P 4450 5250
+F 0 "R3" V 4530 5250 50  0000 C CNN
+F 1 "1k" V 4450 5250 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 4450 5250 60  0001 C CNN
+F 3 "" H 4450 5250 60  0000 C CNN
+	1    4450 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L C C7
+U 1 1 56F3341C
+P 5200 5500
+F 0 "C7" H 5250 5600 50  0000 L CNN
+F 1 "100n" H 5250 5400 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 5200 5500 60  0001 C CNN
+F 3 "" H 5200 5500 60  0000 C CNN
+F 4 "Value" H 5200 5500 60  0001 C CNN "Description"
+F 5 "Value" H 5200 5500 60  0001 C CNN "Notes"
+F 6 "Value" H 5200 5500 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 5200 5500 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 5200 5500 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 5200 5500 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 5200 5500 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 5200 5500 60  0001 C CNN "Supplier 2 Part No"
+	1    5200 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 56F334D2
+P 5550 5500
+F 0 "C11" H 5600 5600 50  0000 L CNN
+F 1 "100n" H 5600 5400 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 5550 5500 60  0001 C CNN
+F 3 "" H 5550 5500 60  0000 C CNN
+F 4 "Value" H 5550 5500 60  0001 C CNN "Description"
+F 5 "Value" H 5550 5500 60  0001 C CNN "Notes"
+F 6 "Value" H 5550 5500 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 5550 5500 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 5550 5500 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 5550 5500 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 5550 5500 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 5550 5500 60  0001 C CNN "Supplier 2 Part No"
+	1    5550 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4950 8300 4950
+Wire Wire Line
+	4700 5100 8350 5100
+Wire Wire Line
+	4700 5250 8400 5250
+Wire Wire Line
+	5550 5300 5550 4950
+Connection ~ 5550 4950
+Wire Wire Line
+	5200 5300 5200 5100
+Connection ~ 5200 5100
+Wire Wire Line
+	4850 5300 4850 5250
+Connection ~ 4850 5250
+Wire Wire Line
+	4850 5700 4850 5800
+Wire Wire Line
+	4850 5800 5550 5800
+Wire Wire Line
+	5550 5800 5550 5700
+Wire Wire Line
+	5200 5700 5200 5800
+Connection ~ 5200 5800
+$Comp
+L GND-RESCUE-LED_Sound_Tubes_Slave #PWR025
+U 1 1 56F33E4C
+P 5350 5900
+F 0 "#PWR025" H 5350 5900 30  0001 C CNN
+F 1 "GND-RESCUE-LED_Sound_Tubes_Slave" H 5350 5830 30  0001 C CNN
+F 2 "" H 5350 5900 60  0000 C CNN
+F 3 "" H 5350 5900 60  0000 C CNN
+	1    5350 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 5900 5350 5800
+Connection ~ 5350 5800
+$Comp
+L R R13
+U 1 1 56F34350
+P 4500 3650
+F 0 "R13" V 4580 3650 50  0000 C CNN
+F 1 "1k" V 4500 3650 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 4500 3650 60  0001 C CNN
+F 3 "" H 4500 3650 60  0000 C CNN
+	1    4500 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L C C5
+U 1 1 56F3435E
+P 4900 4200
+F 0 "C5" H 4950 4300 50  0000 L CNN
+F 1 "100n" H 4950 4100 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 4900 4200 60  0001 C CNN
+F 3 "" H 4900 4200 60  0000 C CNN
+F 4 "Value" H 4900 4200 60  0001 C CNN "Description"
+F 5 "Value" H 4900 4200 60  0001 C CNN "Notes"
+F 6 "Value" H 4900 4200 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 4900 4200 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 4900 4200 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 4900 4200 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 4900 4200 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 4900 4200 60  0001 C CNN "Supplier 2 Part No"
+	1    4900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 56F34364
+P 4500 3800
+F 0 "R14" V 4580 3800 50  0000 C CNN
+F 1 "1k" V 4500 3800 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 4500 3800 60  0001 C CNN
+F 3 "" H 4500 3800 60  0000 C CNN
+	1    4500 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R15
+U 1 1 56F3436A
+P 4500 3950
+F 0 "R15" V 4580 3950 50  0000 C CNN
+F 1 "1k" V 4500 3950 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 4500 3950 60  0001 C CNN
+F 3 "" H 4500 3950 60  0000 C CNN
+	1    4500 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L C C10
+U 1 1 56F34378
+P 5250 4200
+F 0 "C10" H 5300 4300 50  0000 L CNN
+F 1 "100n" H 5300 4100 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 5250 4200 60  0001 C CNN
+F 3 "" H 5250 4200 60  0000 C CNN
+F 4 "Value" H 5250 4200 60  0001 C CNN "Description"
+F 5 "Value" H 5250 4200 60  0001 C CNN "Notes"
+F 6 "Value" H 5250 4200 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 5250 4200 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 5250 4200 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 5250 4200 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 5250 4200 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 5250 4200 60  0001 C CNN "Supplier 2 Part No"
+	1    5250 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C14
+U 1 1 56F34386
+P 5600 4200
+F 0 "C14" H 5650 4300 50  0000 L CNN
+F 1 "100n" H 5650 4100 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 5600 4200 60  0001 C CNN
+F 3 "" H 5600 4200 60  0000 C CNN
+F 4 "Value" H 5600 4200 60  0001 C CNN "Description"
+F 5 "Value" H 5600 4200 60  0001 C CNN "Notes"
+F 6 "Value" H 5600 4200 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 5600 4200 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 5600 4200 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 5600 4200 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 5600 4200 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 5600 4200 60  0001 C CNN "Supplier 2 Part No"
+	1    5600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3650 8200 3650
+Wire Wire Line
+	4750 3800 8100 3800
+Wire Wire Line
+	4750 3950 8050 3950
+Wire Wire Line
+	5600 4000 5600 3650
+Connection ~ 5600 3650
+Wire Wire Line
+	5250 4000 5250 3800
+Connection ~ 5250 3800
+Wire Wire Line
+	4900 4000 4900 3950
+Connection ~ 4900 3950
+Wire Wire Line
+	4900 4400 4900 4500
+Wire Wire Line
+	4900 4500 5600 4500
+Wire Wire Line
+	5600 4500 5600 4400
+Wire Wire Line
+	5250 4400 5250 4500
+Connection ~ 5250 4500
+$Comp
+L GND-RESCUE-LED_Sound_Tubes_Slave #PWR026
+U 1 1 56F3439A
+P 5400 4600
+F 0 "#PWR026" H 5400 4600 30  0001 C CNN
+F 1 "GND-RESCUE-LED_Sound_Tubes_Slave" H 5400 4530 30  0001 C CNN
+F 2 "" H 5400 4600 60  0000 C CNN
+F 3 "" H 5400 4600 60  0000 C CNN
+	1    5400 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4600 5400 4500
+Connection ~ 5400 4500
+$Comp
+L R R10
+U 1 1 56F34888
+P 4500 2250
+F 0 "R10" V 4580 2250 50  0000 C CNN
+F 1 "1k" V 4500 2250 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 4500 2250 60  0001 C CNN
+F 3 "" H 4500 2250 60  0000 C CNN
+	1    4500 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L C C4
+U 1 1 56F34896
+P 4900 2800
+F 0 "C4" H 4950 2900 50  0000 L CNN
+F 1 "100n" H 4950 2700 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 4900 2800 60  0001 C CNN
+F 3 "" H 4900 2800 60  0000 C CNN
+F 4 "Value" H 4900 2800 60  0001 C CNN "Description"
+F 5 "Value" H 4900 2800 60  0001 C CNN "Notes"
+F 6 "Value" H 4900 2800 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 4900 2800 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 4900 2800 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 4900 2800 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 4900 2800 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 4900 2800 60  0001 C CNN "Supplier 2 Part No"
+	1    4900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 56F3489C
+P 4500 2400
+F 0 "R11" V 4580 2400 50  0000 C CNN
+F 1 "1k" V 4500 2400 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 4500 2400 60  0001 C CNN
+F 3 "" H 4500 2400 60  0000 C CNN
+	1    4500 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R12
+U 1 1 56F348A2
+P 4500 2550
+F 0 "R12" V 4580 2550 50  0000 C CNN
+F 1 "1k" V 4500 2550 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 4500 2550 60  0001 C CNN
+F 3 "" H 4500 2550 60  0000 C CNN
+	1    4500 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L C C9
+U 1 1 56F348B0
+P 5250 2800
+F 0 "C9" H 5300 2900 50  0000 L CNN
+F 1 "100n" H 5300 2700 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 5250 2800 60  0001 C CNN
+F 3 "" H 5250 2800 60  0000 C CNN
+F 4 "Value" H 5250 2800 60  0001 C CNN "Description"
+F 5 "Value" H 5250 2800 60  0001 C CNN "Notes"
+F 6 "Value" H 5250 2800 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 5250 2800 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 5250 2800 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 5250 2800 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 5250 2800 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 5250 2800 60  0001 C CNN "Supplier 2 Part No"
+	1    5250 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C13
+U 1 1 56F348BE
+P 5600 2800
+F 0 "C13" H 5650 2900 50  0000 L CNN
+F 1 "100n" H 5650 2700 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 5600 2800 60  0001 C CNN
+F 3 "" H 5600 2800 60  0000 C CNN
+F 4 "Value" H 5600 2800 60  0001 C CNN "Description"
+F 5 "Value" H 5600 2800 60  0001 C CNN "Notes"
+F 6 "Value" H 5600 2800 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 5600 2800 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 5600 2800 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 5600 2800 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 5600 2800 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 5600 2800 60  0001 C CNN "Supplier 2 Part No"
+	1    5600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2250 8100 2250
+Wire Wire Line
+	4750 2400 8200 2400
+Wire Wire Line
+	4750 2550 8300 2550
+Wire Wire Line
+	5600 2600 5600 2250
+Connection ~ 5600 2250
+Wire Wire Line
+	5250 2600 5250 2400
+Connection ~ 5250 2400
+Wire Wire Line
+	4900 2600 4900 2550
+Connection ~ 4900 2550
+Wire Wire Line
+	4900 3000 4900 3100
+Wire Wire Line
+	4900 3100 5600 3100
+Wire Wire Line
+	5600 3100 5600 3000
+Wire Wire Line
+	5250 3000 5250 3100
+Connection ~ 5250 3100
+$Comp
+L GND-RESCUE-LED_Sound_Tubes_Slave #PWR027
+U 1 1 56F348D2
+P 5400 3200
+F 0 "#PWR027" H 5400 3200 30  0001 C CNN
+F 1 "GND-RESCUE-LED_Sound_Tubes_Slave" H 5400 3130 30  0001 C CNN
+F 2 "" H 5400 3200 60  0000 C CNN
+F 3 "" H 5400 3200 60  0000 C CNN
+	1    5400 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3200 5400 3100
+Connection ~ 5400 3100
+$Comp
+L R R4
+U 1 1 56F34A8A
+P 4500 1150
+F 0 "R4" V 4580 1150 50  0000 C CNN
+F 1 "1k" V 4500 1150 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 4500 1150 60  0001 C CNN
+F 3 "" H 4500 1150 60  0000 C CNN
+	1    4500 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L C C2
+U 1 1 56F34A98
+P 4900 1700
+F 0 "C2" H 4950 1800 50  0000 L CNN
+F 1 "100n" H 4950 1600 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 4900 1700 60  0001 C CNN
+F 3 "" H 4900 1700 60  0000 C CNN
+F 4 "Value" H 4900 1700 60  0001 C CNN "Description"
+F 5 "Value" H 4900 1700 60  0001 C CNN "Notes"
+F 6 "Value" H 4900 1700 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 4900 1700 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 4900 1700 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 4900 1700 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 4900 1700 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 4900 1700 60  0001 C CNN "Supplier 2 Part No"
+	1    4900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 56F34A9E
+P 4500 1300
+F 0 "R5" V 4580 1300 50  0000 C CNN
+F 1 "1k" V 4500 1300 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 4500 1300 60  0001 C CNN
+F 3 "" H 4500 1300 60  0000 C CNN
+	1    4500 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 56F34AA4
+P 4500 1450
+F 0 "R6" V 4580 1450 50  0000 C CNN
+F 1 "1k" V 4500 1450 50  0000 C CNN
+F 2 "REInnovationFootprint:TH_Resistor_1" H 4500 1450 60  0001 C CNN
+F 3 "" H 4500 1450 60  0000 C CNN
+	1    4500 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L C C8
+U 1 1 56F34AB2
+P 5250 1700
+F 0 "C8" H 5300 1800 50  0000 L CNN
+F 1 "100n" H 5300 1600 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 5250 1700 60  0001 C CNN
+F 3 "" H 5250 1700 60  0000 C CNN
+F 4 "Value" H 5250 1700 60  0001 C CNN "Description"
+F 5 "Value" H 5250 1700 60  0001 C CNN "Notes"
+F 6 "Value" H 5250 1700 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 5250 1700 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 5250 1700 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 5250 1700 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 5250 1700 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 5250 1700 60  0001 C CNN "Supplier 2 Part No"
+	1    5250 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 56F34AC0
+P 5600 1700
+F 0 "C12" H 5650 1800 50  0000 L CNN
+F 1 "100n" H 5650 1600 50  0000 L CNN
+F 2 "matts_components:C1_wide_lg_pad" H 5600 1700 60  0001 C CNN
+F 3 "" H 5600 1700 60  0000 C CNN
+F 4 "Value" H 5600 1700 60  0001 C CNN "Description"
+F 5 "Value" H 5600 1700 60  0001 C CNN "Notes"
+F 6 "Value" H 5600 1700 60  0001 C CNN "Manufacturer"
+F 7 "Value" H 5600 1700 60  0001 C CNN "Manufacturer Part No"
+F 8 "Value" H 5600 1700 60  0001 C CNN "Supplier 1"
+F 9 "Value" H 5600 1700 60  0001 C CNN "Supplier 1 Part No"
+F 10 "Value" H 5600 1700 60  0001 C CNN "Supplier 2"
+F 11 "Value" H 5600 1700 60  0001 C CNN "Supplier 2 Part No"
+	1    5600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1150 7800 1150
+Wire Wire Line
+	4750 1300 7900 1300
+Wire Wire Line
+	4750 1450 8000 1450
+Wire Wire Line
+	5600 1500 5600 1150
+Connection ~ 5600 1150
+Wire Wire Line
+	5250 1500 5250 1300
+Connection ~ 5250 1300
+Wire Wire Line
+	4900 1500 4900 1450
+Connection ~ 4900 1450
+Wire Wire Line
+	4900 1900 4900 2000
+Wire Wire Line
+	4900 2000 5600 2000
+Wire Wire Line
+	5600 2000 5600 1900
+Wire Wire Line
+	5250 1900 5250 2000
+Connection ~ 5250 2000
+$Comp
+L GND-RESCUE-LED_Sound_Tubes_Slave #PWR028
+U 1 1 56F34AD4
+P 5400 2100
+F 0 "#PWR028" H 5400 2100 30  0001 C CNN
+F 1 "GND-RESCUE-LED_Sound_Tubes_Slave" H 5400 2030 30  0001 C CNN
+F 2 "" H 5400 2100 60  0000 C CNN
+F 3 "" H 5400 2100 60  0000 C CNN
+	1    5400 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2100 5400 2000
+Connection ~ 5400 2000
+Wire Wire Line
+	8400 5250 8400 4500
+Wire Wire Line
+	8400 4500 10450 4500
+Connection ~ 8700 4500
+Wire Wire Line
+	8200 3750 10450 3750
+Wire Wire Line
+	8100 3900 10450 3900
+Wire Wire Line
+	8050 4050 10450 4050
+Wire Wire Line
+	8300 4200 10450 4200
+Wire Wire Line
+	8350 4350 10450 4350
+Wire Wire Line
+	7800 1000 10500 1000
+Wire Wire Line
+	7900 1150 10500 1150
+Wire Wire Line
+	8000 1300 10500 1300
+Wire Wire Line
+	8100 1450 10500 1450
+Wire Wire Line
+	8200 1600 10500 1600
+Wire Wire Line
+	8300 1750 10500 1750
+Wire Wire Line
+	8300 2550 8300 1750
+Connection ~ 8750 1750
+Wire Wire Line
+	8200 2400 8200 1600
+Connection ~ 9050 1600
+Wire Wire Line
+	8100 2250 8100 1450
+Connection ~ 9350 1450
+Wire Wire Line
+	8000 1450 8000 1300
+Connection ~ 9650 1300
+Wire Wire Line
+	7900 1300 7900 1150
+Connection ~ 9950 1150
+Wire Wire Line
+	7800 1150 7800 1000
+Connection ~ 10250 1000
+Wire Wire Line
+	8350 5100 8350 4350
+Connection ~ 9000 4350
+Wire Wire Line
+	8300 4950 8300 4200
+Connection ~ 9300 4200
+Wire Wire Line
+	8050 3950 8050 4050
+Connection ~ 9600 4050
+Wire Wire Line
+	8100 3800 8100 3900
+Connection ~ 9900 3900
+Wire Wire Line
+	8200 3650 8200 3750
+Connection ~ 10200 3750
+$EndSCHEMATC
